@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="2.0" package="kpwn.com.ipv6disabler">
+	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="27" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<application android:theme="resourceId:0x7f0d0005" android:label="IPv6 disabler" android:icon="res/mipmap-xxxhdpi-v4/ic_launcher.png" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="res/mipmap-xxxhdpi-v4/ic_launcher_round.png">
+		<activity android:name="kpwn.com.ipv6disabler.MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-8209234660475270~8393763091" />
+		<meta-data android:name="android.support.VERSION" android:value="26.1.0" />
+		<activity android:theme="@android:style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="0xfb0" />
+		<provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="kpwn.com.ipv6disabler.mobileadsinitprovider" android:initOrder="100" />
+		<meta-data android:name="com.google.android.gms.version" android:value="12451000" />
+		<meta-data android:name="com.android.vending.derived.apk.id" android:value="1" />
+	</application>
+</manifest>
